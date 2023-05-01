@@ -1,0 +1,4 @@
+data/0raw
+notebooks/personal/*
+.vscode/launch.json
+data/*

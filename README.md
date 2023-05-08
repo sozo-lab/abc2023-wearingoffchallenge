@@ -4,12 +4,12 @@
 
 # Contents
 
-* [data](https://github.com/sozo-lab/abc2023-wearingoffchallenge/tree/main/data)
+* data
 
-  * [data/2-person](https://github.com/sozo-lab/abc2023-wearingoffchallenge/tree/main/data/2-person) - 2 PD patients with 30 days data
-  * [data/10-person](https://github.com/sozo-lab/abc2023-wearingoffchallenge/tree/main/data/10-person) - 10 PD patients with 30 days data
-  * [data/symptom_dictionary.json](https://github.com/sozo-lab/abc2023-wearingoffchallenge/tree/main/data/symptom_dictionary.json) - Japanese-English dictionary of Wearing-Off Questionnaire-8 (WOQ-8) symptoms
-  * [data/participant_information.xlsx](https://github.com/sozo-lab/abc2023-wearingoffchallenge/tree/main/data/participant_information.xlsx) - PD participants' basic information
+  * data/2-person - 2 PD patients with 30 days data
+  * data/10-person - 10 PD patients with 30 days data
+  * data/symptom_dictionary.json - Japanese-English dictionary of Wearing-Off Questionnaire-8 (WOQ-8) symptoms
+  * data/participant_information.xlsx - PD participants' basic information
     * Age
     * Sex
     * Parkinson's Disease stage

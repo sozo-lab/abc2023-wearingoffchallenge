@@ -15,6 +15,8 @@
       * Japan's Ministry of Health, Labor & Welfare’s Classification of Living Dysfunction (JCLD)
     * Parkinson's Disease Questionnaire-8 (PDQ-8)
 
+This file is supporting data for [the 5th ABC Challenge](https://abc-research.github.io/challenge2023/).
+
 # References
 * J. N. Victorino, Y. Shibata, S. Inoue, and T. Shibata, “Forecasting Parkinson’s Disease Patients’ Wearing-Off using Wrist-Worn Fitness Tracker and Smartphone Dataset,” in 4th International Conference on Activity and Behavior Computing (ABC 2022), 2022-10-27 - 2022-10-29, London, United Kingdom.
 

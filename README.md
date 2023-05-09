@@ -5,8 +5,6 @@
 # Contents
 
 * data
-
-  * data/2-person - 2 PD patients with 30 days data
   * data/10-person - 10 PD patients with 30 days data
   * data/symptom_dictionary.json - Japanese-English dictionary of Wearing-Off Questionnaire-8 (WOQ-8) symptoms
   * data/participant_information.xlsx - PD participants' basic information

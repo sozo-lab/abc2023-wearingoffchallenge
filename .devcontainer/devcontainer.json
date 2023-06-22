@@ -1,27 +1,33 @@
 {
-  "name": "abc2023",
-  "image": "cschranz/gpu-jupyter:v1.5_cuda-11.6_ubuntu-20.04",
-  "runArgs": [
-    "--name",
-    "abc2023",
-    "-p",
-    "8888:8888",
-    "-p",
-    "6006:6006",
-    "--env-file",
-    ".devcontainer/devcontainer.env"
-    //, "--gpus", "all" // JNV's note: Add this if you want to use GPU
-  ],
-  // JNV's note: This is important to prevent the container from running the 
+  "name": "abc2023challenge",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "notebook",
+  "shutdownAction": "none",
+  // JNV's note: Important to prevent the container from running default command
   "overrideCommand": false,
-  "containerUser": "root",
   "postCreateCommand": "bash .devcontainer/postCreate.sh",
+  "workspaceFolder": "/workspaces",
+  "remoteUser": "root",
+  "forwardPorts": [
+    8888
+  ],
+  "portsAttributes": {
+    "8888": {
+      "label": "Jupyter",
+      "requireLocalPort": true,
+      "onAutoForward": "ignore"
+    }
+  },
   "customizations": {
     "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "/opt/conda/bin/python"
+      },
       "extensions": [
         "donjayamanne.githistory",
         "GitHub.copilot-nightly",
-        "GitHub.copilot",
+        "GitHub.copilot-labs",
+        "GitHub.codespaces",
         "eamodio.gitlens",
         "ecmel.vscode-html-css",
         "REditorSupport.r",
@@ -38,14 +44,9 @@
         "ms-python.python",
         "ms-vsliveshare.vsliveshare",
         "ms-vscode.live-server",
-        "GitHub.codespaces",
-        "GrapeCity.gc-excelviewer"
+        "GrapeCity.gc-excelviewer",
+        "mechatroner.rainbow-csv",
       ]
     }
   }
-  // JNV's note: For some reason, I'm having a hard time with these configs
-  // "forwardPorts": [8888, 6006],
-  // "appPort": [8888],
-  // JNV's note: This works but having difficulty in forwarding the default NOTEBOOK_ARGS
-  // "postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt && start.sh jupyter lab ${NOTEBOOK_ARGS}",
 }

@@ -1,0 +1,29 @@
+# CHANGELOGS
+* [English](#changelog)
+* [日本語](#%E6%9B%B4%E6%96%B0%E5%B1%A5%E6%AD%B4)
+
+## Changelog
+### 2023-06-20
+- Moved final test data in 'ABC Challenge 2023 test dataset'
+- Updated submission file format
+- Updated '2 - Forecasting.ipynb' to include how to generate submission file
+- Updated '3 - Evaluate Submission.ipynb'
+- Added 3 notebooks for webinar tutorial
+- Added comments both in English & Japanese
+### 2023-06-15
+- Updated train dataset's sleep data to filter based on "Calendar Date" instead of "Start Time"
+- Kept test sleep data as is without removing forecast times
+
+---
+
+## 更新履歴
+### 2023 年 6 月 20 日
+- 「ABC Challenge 2023 test dataset」の最終テストデータを移動しました
+- 提出ファイルの形式を更新しました
+- 「2 - Forecasting.ipynb」を更新して提出ファイルの生成方法を追加しました
+- 「3 - Evaluate Submission.ipynb」を更新しました
+- ウェビナーのチュートリアル用に 3 つのノートブックを追加しました
+- 英語と日本語の両方でコメントを追加しました
+### 2023 年 6 月 15 日
+- 訓練データセットの睡眠データを「開始時刻」ではなく「カレンダー日付」に基づいてフィルタリングするように更新しました
+- 予測時刻を削除せずにテスト睡眠データをそのままにしました

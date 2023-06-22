@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  notebook:
+    image: cschranz/gpu-jupyter:v1.5_cuda-11.6_ubuntu-20.04
+    volumes:
+      - ..:/workspaces:cached
+      - .jupyter:/home/jovyan/.jupyter:cached
+    working_dir: /workspaces
+    env_file: notebook.env
+    ports:
+      - 8888:8888

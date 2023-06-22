@@ -1,4 +1,10 @@
 data/0raw
+data/*/combined_data*.xlsx
+data/10-person/complete
 notebooks/personal/*
 .vscode/launch.json
-data/*
+notebooks/.ipynb_checkpoints/
+
+.devcontainer/.jupyter
+.devcontainer/config.conf
+.devcontainer/github*

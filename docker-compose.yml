@@ -9,7 +9,7 @@ services:
     ports:
       - "8888:8888"
     volumes:
-        - ./:/workspaces/abc2023
+        - ./:/workspaces/
     ## If you have a GPU, uncomment the following lines
     # deploy:
     #   resources:

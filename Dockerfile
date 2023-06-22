@@ -7,6 +7,6 @@ RUN pip install --upgrade pip
 RUN pip install jupyter jupyterlab
 RUN pip install -r requirements.txt
 
-WORKDIR /workspaces/abc2023/
+WORKDIR /workspaces/
 ENTRYPOINT ["jupyter-lab", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root", "--NotebookApp.token=''"]
-CMD ["--notebook-dir=/workspaces/abc2023/"]
+CMD ["--notebook-dir=/workspaces/"]
